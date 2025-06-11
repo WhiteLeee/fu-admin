@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/6/14 23:
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: celery_log.py
 # @Software: PyCharm
 from typing import List

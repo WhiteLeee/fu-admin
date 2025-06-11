@@ -33,6 +33,6 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vben/types": "workspace:*"
+    "@vben/types": "file:../types"
   }
 }

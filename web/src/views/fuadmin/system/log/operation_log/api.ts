@@ -1,8 +1,8 @@
 /**
  * -*- coding: utf-8 -*-
  * time: 2022/5/11 23:32
- * author: 臧成龙
- * QQ: 939589097
+ * author: Wick
+ * 
  */
 import { defHttp } from '/@/utils/http/axios';
 

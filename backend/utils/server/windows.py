@@ -3,10 +3,7 @@
 # +-------------------------------------------------------------------
 # | django-vue3-lyadmin
 # +-------------------------------------------------------------------
-# | Author: lybbn
-# +-------------------------------------------------------------------
-# | QQ: 1042594286
-# +-------------------------------------------------------------------
+# | Author: Wick
 
 # ------------------------------
 # windows系统命令工具类封装
@@ -175,7 +172,7 @@ def process_exists(pname, exe=None):
 def GetRandomString(length):
     """
        @name 取随机字符串
-       @author hwliang<hwl@bt.cn>
+       @author  Wick
        @param length 要获取的长度
        @return string(length)
     """
@@ -191,7 +188,7 @@ def GetRandomString(length):
 def Md5(strings):
     """
         @name 生成MD5
-        @author hwliang<hwl@bt.cn>
+        @author  Wick
         @param strings 要被处理的字符串
         @return string(32)
     """

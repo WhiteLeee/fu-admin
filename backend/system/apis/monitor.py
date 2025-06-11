@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # time: 2022/7/26 14:12
 # file: monitor.py
-# author: 臧成龙
-# QQ: 939589097
+# author: Wick
+# 
 from ninja import Router
 
 from utils.fu_response import FuResponse

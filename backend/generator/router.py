@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # time: 2022/7/21 14:10
 # file: router.py
-# author: 臧成龙
-# QQ: 939589097
+# author: Wick
+# 
 from ninja import Router
 from .test_demo.api import router as test_demo_router
 # from .template_test.api import router as template_test_router

@@ -32,7 +32,7 @@ class Initialize(CoreInitialize):
                 "sort": 1,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             },
             {
@@ -48,7 +48,7 @@ class Initialize(CoreInitialize):
                 "sort": 2,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             },
             {
@@ -64,7 +64,7 @@ class Initialize(CoreInitialize):
                 "sort": 1,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             },
             {
@@ -80,7 +80,7 @@ class Initialize(CoreInitialize):
                 "sort": 2,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             },
             {
@@ -96,7 +96,7 @@ class Initialize(CoreInitialize):
                 "sort": 1,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             },
             {
@@ -112,7 +112,7 @@ class Initialize(CoreInitialize):
                 "sort": 2,
                 "owner": None,
                 "phone": "13244724433",
-                "email": "939589097@qq.com",
+                "email": "davidheee@outlook.com",
                 "status": 1,
             }
         ]

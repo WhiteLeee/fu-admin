@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/5/14 15:05
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: login.py
 # @Software: PyCharm
 import json

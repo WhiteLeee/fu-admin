@@ -71,9 +71,9 @@ export default {
     signUpFormTitle: 'Sign up',
     forgetFormTitle: 'Reset password',
 
-    signInTitle: 'Backstage management system',
-    signInDesc: 'Enter your personal details and get started!',
-    policy: 'I agree to the xxx Privacy Policy',
+    signInTitle: 'YiTong Devices Manager System',
+    signInDesc: 'Yitong Cloud Computing provides',
+    policy: 'I agree to the YiTong Privacy Policy',
     scanSign: `scanning the code to complete the login`,
 
     loginButton: 'Sign in',

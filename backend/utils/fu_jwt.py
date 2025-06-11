@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/5/14 16:19
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: fu_jwt.py
 # @Software: PyCharm
 from typing import Union

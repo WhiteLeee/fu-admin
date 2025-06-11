@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/6/2 23:19
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: fu_auth.py
 # @Software: PyCharm
 # -*- coding: utf-8 -*-

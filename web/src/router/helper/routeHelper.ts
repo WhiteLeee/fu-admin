@@ -18,7 +18,7 @@ let dynamicViewsModules: Record<string, () => Promise<Recordable>>;
 
 // Dynamic introduction
 function asyncImportRoute(routes: AppRouteRecordRaw[] | undefined) {
-  dynamicViewsModules = dynamicViewsModules || import.meta.glob('../../views/**/*.{vue,tsx}');
+  dynamicViewsModules = dynamicViewsModules || (import.meta as any).glob('../../views/**/*.{vue,tsx}');
   if (!routes) return;
   routes.forEach((item) => {
     if (!item.component && item.meta?.frameSrc) {
@@ -79,10 +79,10 @@ export function transformObjToRoute<T = AppRouteModule>(routeList: AppRouteModul
         route.children = [cloneDeep(route)];
         route.component = LAYOUT;
          //某些情况下如果name如果没有值， 多个一级路由菜单会导致页面404
-        if (!route.name || !route.menuName) {
+        if (!route.name) {
           warn('找不到菜单对应的name或menuName, 请检查数据!');
         }
-        route.name = `${route.name || route.menuName}Parent`;
+        route.name = `${route.name}Parent`;
         route.path = '';
         const meta = route.meta || {};
         meta.single = true;

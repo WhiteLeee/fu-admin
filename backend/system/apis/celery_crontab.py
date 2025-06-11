@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/6/14 00:13
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: crontab_schedule.py
 # @Software: PyCharm
 from typing import List

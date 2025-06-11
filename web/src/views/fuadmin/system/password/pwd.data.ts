@@ -1,8 +1,8 @@
 /**
  * -*- coding: utf-8 -*-
  * time: 2022/5/17 23:25
- * author: 臧成龙
- * QQ: 939589097
+ * author: Wick
+ * 
  */
 import { FormSchema } from '/@/components/Form';
 

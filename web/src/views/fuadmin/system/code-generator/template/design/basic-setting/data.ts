@@ -4,8 +4,8 @@ import { FormSchema } from '/@/components/Form';
  * -*- coding: utf-8 -*-
  * time: 6/30/2023 3:36 PM
  * file: data.ts
- * author: 臧成龙
- * QQ: 939589097
+ * author: Wick
+ * 
  */
 export const schemas: FormSchema[] = [
   {

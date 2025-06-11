@@ -3,10 +3,7 @@
 # +-------------------------------------------------------------------
 # | django-vue3-lyadmin
 # +-------------------------------------------------------------------
-# | Author: lybbn
-# +-------------------------------------------------------------------
-# | QQ: 1042594286
-# +-------------------------------------------------------------------
+# | Author: Wick
 
 # ------------------------------
 # linux系统命令工具类封装
@@ -24,7 +21,7 @@ PUBLIC_DICT = os.path.join(BASE_DIR, 'public.json')
 def Md5(strings):
     """
         @name 生成MD5
-        @author hwliang<hwl@bt.cn>
+        @author  Wick
         @param strings 要被处理的字符串
         @return string(32)
     """
@@ -43,7 +40,7 @@ def md5(strings):
 def get_preexec_fn(run_user):
     '''
         @name 获取指定执行用户预处理函数
-        @author hwliang<2021-08-19>
+        @author Wick<2021-08-19>
         @param run_user<string> 运行用户
         @return 预处理函数
     '''
@@ -68,7 +65,7 @@ def get_error_info():
 def ExecShell(cmdstring, timeout=None, shell=True, cwd=None, env=None, user=None):
     '''
         @name 执行命令
-        @author hwliang<2021-08-19>
+        @author Wick<2021-08-19>
         @param cmdstring 命令 [必传]
         @param timeout 超时时间
         @param shell 是否通过shell运行
@@ -156,7 +153,7 @@ def ReadFile(filename, mode='r'):
 def readFile(filename, mode='r'):
     '''
         @name 读取指定文件数据
-        @author hwliang<2021-06-09>
+        @author Wick<2021-06-09>
         @param filename<string> 文件名
         @param mode<string> 文件打开模式，默认r
         @return string or bytes or False 如果返回False则说明读取失败
@@ -172,7 +169,7 @@ def xsssec(text):
 def get_os_version():
     '''
         @name 取操作系统版本
-        @author hwliang<2021-08-07>
+        @author Wick<2021-08-07>
         @return string
     '''
     p_file = '/etc/.productinfo'
@@ -497,7 +494,7 @@ def getMsg(key, args=()):
 def ReturnMsg(status, msg, args=()):
     """
         @name 取通用dict返回
-        @author hwliang<hwl@bt.cn>
+        @author  Wick
         @param status  返回状态
         @param msg  返回消息
         @return dict  {"status":bool,"msg":string}
@@ -516,7 +513,7 @@ def ReturnMsg(status, msg, args=()):
 def returnMsg(status, msg, args=()):
     """
         @name 取通用dict返回
-        @author hwliang<hwl@bt.cn>
+        @author  Wick
         @param status  返回状态
         @param msg  返回消息
         @return dict  {"status":bool,"msg":string}

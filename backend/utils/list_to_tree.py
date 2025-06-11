@@ -1,9 +1,9 @@
-# Author 臧成龙
+# Author Wick
 # coding=utf-8
 # @Time    : 2022/5/16 21:09
 # @File    : list_to_tree.py
 # @Software: PyCharm
-# @qq: 939589097
+# @
 
 def add_node(p, node):
     # ⼦节点list

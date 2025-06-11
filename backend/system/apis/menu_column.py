@@ -1,9 +1,9 @@
-# Author 臧成龙
+# Author Wick
 # coding=utf-8
 # @Time    : 2023/3/27 23:26
 # @File    : menu_menu_column_field.py
 # @Software: PyCharm
-# @qq: 939589097
+# @
 
 from typing import List
 

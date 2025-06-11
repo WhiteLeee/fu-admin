@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/5/13 23:41
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: fu_ninja.py
 # @Software: PyCharm
 from typing import Any, List

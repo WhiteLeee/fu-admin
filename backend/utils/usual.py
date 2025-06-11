@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/6/4 23:32
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: usual.py
 # @Software: PyCharm
 # -*- coding: utf-8 -*-

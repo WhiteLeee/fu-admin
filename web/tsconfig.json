@@ -1,10 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@vben/ts-config/vue-app.json",
+  "extends": "./internal/ts-config/vue-app.json",
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": false,
-    "types": ["vite/client"],
+    "types": [
+      "vite/client",
+      "node",
+      "babel__template",
+      "babel__traverse",
+      "istanbul-lib-coverage",
+      "istanbul-reports",
+      "mousetrap",
+      "normalize-package-data",
+      "prettier",
+      "stack-utils",
+      "web-bluetooth"
+    ],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
       "/@/*": ["src/*"],
       "/#/*": ["types/*"],

@@ -2,8 +2,8 @@
  * -*- coding: utf-8 -*-
  * time: 7/3/2023 10:06 PM
  * file: data.ts
- * author: 臧成龙
- * QQ: 939589097
+ * author: Wick
+ * 
  */
 import { IFormConfig } from "/@/views/sys/form-design/typings/v-form-component";
 

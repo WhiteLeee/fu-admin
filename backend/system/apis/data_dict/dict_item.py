@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/6/07 00:56
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: dict_item.py
 # @Software: PyCharm
 from typing import List

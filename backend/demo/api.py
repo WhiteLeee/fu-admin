@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # time: 2022/7/21 14:01
 # file: api.py
-# author: 臧成龙
-# QQ: 939589097
+# author: Wick
+# 
 
 from typing import List
 

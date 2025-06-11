@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/5/10 21:56
-# @Author  : 臧成龙
+# @Author  : Wick
 # @FileName: generator_template.py
 # @Software: PyCharm
 import json

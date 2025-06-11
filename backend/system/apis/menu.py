@@ -1,9 +1,9 @@
-# Author 臧成龙
+# Author Wick
 # coding=utf-8
 # @Time    : 2022/5/15 21:47
 # @File    : menu.py
 # @Software: PyCharm
-# @qq: 939589097
+# @
 
 from typing import List
 
