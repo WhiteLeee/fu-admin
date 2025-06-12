@@ -1,8 +1,8 @@
 import { ComponentOptions, h } from 'vue';
 import {
   FormItemContentRenderParams,
-  FormItemRenderOptions,
   VxeGlobalRendererHandles,
+  VxeFormItemPropTypes
 } from 'vxe-table';
 import XEUtils from 'xe-utils';
 import { componentMap } from '../componentMap';
@@ -192,7 +192,7 @@ export function createDefaultRender(
 /**
  * @description: 创建编辑单元格
  */
-export function createEditRender(
+function createEditRender(
   defaultProps?: { [key: string]: any },
   callBack?: (
     renderOpts: VxeGlobalRendererHandles.RenderEditOptions,
@@ -298,19 +298,19 @@ export function createDefaultFilterRender() {
 /**
  * @description: 创建 form表单渲染
  */
-export function createFormItemRender(
-  defaultProps?: { [key: string]: any },
-  callBack?: (
-    renderOpts: FormItemRenderOptions,
+export function AcOEtFormItemRender(
+  defaultProps?: { [key: string]: any }, // 添加 defaultProps 参数
+  callBack?: ( // 添加 callBack 参数
+    renderOpts: VxeFormItemPropTypes.ItemRender,
     params: FormItemContentRenderParams,
   ) => Record<string, any>,
 ) {
-  return function (renderOpts: FormItemRenderOptions, params: FormItemContentRenderParams) {
-    const args = (callBack && callBack(renderOpts, params)) ?? {};
+  return function (renderOpts: VxeFormItemPropTypes.ItemRender, params: FormItemContentRenderParams) {
     const { data, property, $form } = params;
     const { name } = renderOpts;
     const { attrs } = renderOpts;
     const itemValue = XEUtils.get(data, property);
+    const args = (callBack && callBack(renderOpts, params)) ?? {};
 
     const Component = getComponent(name);
     return [
@@ -354,7 +354,7 @@ export function createCellRender(
   ) {
     const args = (callBack && callBack(renderOpts, params)) ?? [];
     const cellLabel = getSelectCellValue && getSelectCellValue(renderOpts, params, ...args);
-    const { placeholder } = renderOpts;
+    const { placeholder } = renderOpts as any; // 使用类型断言来访问 placeholder
 
     return [
       h(

@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 
-import dayjs from 'dayjs';
+import * as dayjs from 'dayjs';
 import { readPackageJSON } from 'pkg-types';
 import { defineConfig, loadEnv, mergeConfig, type UserConfig } from 'vite';
 
@@ -87,6 +87,10 @@ function defineApplicationConfig(defineOptions: DefineOptions = {}) {
           less: {
             modifyVars: generateModifyVars(),
             javascriptEnabled: true,
+          },
+          scss: {
+            api: 'modern-compiler',
+            silenceDeprecations: ['legacy-js-api'],
           },
         },
       },

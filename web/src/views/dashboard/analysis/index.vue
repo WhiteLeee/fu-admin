@@ -9,42 +9,6 @@
         <SalesProductPie class="md:w-1/3 w-full" :loading="loading" />
       </div>
     </div>
-    <Modal
-      :closable="false"
-      v-model:open="open"
-      title="Fu Admin"
-      @ok="handleOk"
-      centered
-      width="40%"
-      cancel-text="关闭"
-      ok-text="立即体验"
-    >
-      <template #footer>
-        <Space>
-          <Button @click="handleCancel"> 暂不体验 </Button>
-        </Space>
-      </template>
-      <div style="padding: 10px 20px">
-        <b>🔥工作流</b> 已发布， 源码地址：<a :href="url" target="_blank">
-          {{ url }}
-        </a>
-      </div>
-      <div style="padding: 10px 20px">
-        <b>🔥Fu FastApi 开源版</b> 已发布， 源码地址：<a :href="fastApiOpenUrl" target="_blank">
-          {{ fastApiOpenUrl }}
-        </a>
-      </div>
-      <div style="padding: 10px 20px">
-        <b>🌟Fu Admin Pro</b> 已发布， 体验地址：<a :href="url" target="_blank">
-          {{ url }}
-        </a>
-      </div>
-      <div style="padding: 10px 20px">
-        <b>🌟Fu FastApi Pro</b> 已发布， 体验地址：<a :href="fastApiUrl" target="_blank">
-          {{ fastApiUrl }}
-        </a>
-      </div>
-    </Modal>
   </div>
 </template>
 <script lang="ts" setup>
@@ -54,26 +18,26 @@
   import VisitSource from './components/VisitSource.vue';
   import VisitRadar from './components/VisitRadar.vue';
   import SalesProductPie from './components/SalesProductPie.vue';
-  import { Modal, Button, Space } from 'ant-design-vue';
+  // import { Modal, Button, Space } from 'ant-design-vue'; // Modal, Button, Space 已被移除
 
   const loading = ref(true);
-  const open = ref(true);
+  // const open = ref(true); // open 已被移除
 
-  const url = 'http://124.222.210.96:8080';
+  // const url = 'http://124.222.210.96:8080'; // url 已被移除
 
-  const fastApiUrl = 'http://124.222.210.96:7070';
+  // const fastApiUrl = 'http://124.222.210.96:7070'; // fastApiUrl 已被移除
 
-  const fastApiOpenUrl = 'https://gitee.com/fuadmin/fu-fastapi-vue';
+  // const fastApiOpenUrl = 'https://gitee.com/fuadmin/fu-fastapi-vue'; // fastApiOpenUrl 已被移除
 
   setTimeout(() => {
     loading.value = false;
   }, 1500);
 
-  const handleOk = () => {
-    window.location.href = url;
-    open.value = false;
-  };
-  const handleCancel = () => {
-    open.value = false;
-  };
+  // const handleOk = () => { // handleOk 已被移除
+  //   window.location.href = url;
+  //   open.value = false;
+  // };
+  // const handleCancel = () => { // handleCancel 已被移除
+  //   open.value = false;
+  // };
 </script>

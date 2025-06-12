@@ -1,7 +1,5 @@
 # FuAdmin
 
-[![img](https://img.shields.io/badge/license-Apache%202.0-dark)](https://gitee.com/fuadmin/fu-admin/blob/master/LICENSE) [![img](https://img.shields.io/badge/python-%3E=3.7.x-green.svg)](https://python.org/) [![PyPI - Django Version badge](https://img.shields.io/badge/django%20versions-4.0-blue)](https://docs.djangoproject.com/zh-hans/4.0.4/) [![img](https://img.shields.io/badge/node-%3E%3D%2016.0.0-brightgreen)](https://nodejs.org/zh-cn/) [![img](https://gitee.com/fuadmin/fu-admin/badge/star.svg?theme=dark)](https://gitee.com/fuadmin/fu-admin) [![GitHub stars](https://img.shields.io/github/stars/FuAdmin/FuAdmin.svg?theme=dark&label=Github)](https://github.com/FuAdmin/FuAdmin)
-
 ## 为什么使用 Django-Ninja 和 Vue3
 
 💡 **「Django Ninja 相比于 Django Rest Framework 」**
@@ -29,36 +27,17 @@
 
 ## 平台简介
 
-💡 [fu-admin-web](https://gitee.com/fuadmin/fu-admin-web) 采用 VUE3，TS 开发。 💡 [fu-admin-backend](https://gitee.com/fuadmin/fu-admin-backend) 采用 Python，Django 和 Django-Ninija 开发。数据库支持MySql，SqlServer，Sqlite。
+💡 [fu-admin-web] 采用 VUE3，TS 开发。 💡 [fu-admin-backend]采用 Python，Django 和 Django-Ninija 开发。数据库支持MySql，SqlServer，Sqlite。
 
-- 🧑‍🤝‍🧑 前端采用[VbenAdmin](https://vvbin.cn/doc-next) 、[Vue3](https://cn.vuejs.org/)、[Ant Design Vue](https://www.antdv.com/docs/vue/getting-started-cn)。
-- 👭 后端采用 Python 语言 Django 框架以及强大的 [Django Ninja](https://django-ninja.rest-framework.com/)。
+- 🧑‍🤝‍🧑 前端采用[VbenAdmin 、[Vue3]、[Ant Design Vue]。
+- 👭 后端采用 Python 语言 Django 框架以及强大的 [Django Ninja]。
 - 👬 支持加载动态权限菜单，多方式轻松权限控制。
-- 💡 Vue2 项目移步[Dvadmin](https://gitee.com/liqianglog/django-vue-admin)
-- 💏 特别鸣谢：[VbenAdmin](https://github.com/vbenjs/vue-vben-admin) 、[Ant Design Vue](https://github.com/vueComponent/ant-design-vue)。
-- 💡 特别感谢[jetbrains](https://www.jetbrains.com/) 为本开源项目提供免费的 IntelliJ IDEA 授权。
 
 ## 在线体验
-
-👩‍👧‍👦 演示地址：[http://175.24.184.165:8080](http://175.24.184.165:8080)
 
 - 账号：superadmin
 
 - 密码：123456
-
-
-## 交流
-
-- FuAdmin 交流群：726947525
-
-<img src="backend/utils/picture/qq.png" alt="qq 群" style="zoom: 25%;" />
-
-## 源码地址
-
-|        | 项目地址                                |
-|--------|-------------------------------------|
-| github | https://github.com/FuAdmin/fu-admin |
-| 码云     | https://gitee.com/fuadmin/fu-admin  | 
 
 ## 内置功能
 
@@ -132,15 +111,3 @@ cd backend
 
 - 文档访问地址：[http://localhost:8080/api/docs](http://localhost:8080/api/docs) (默认为此地址，如有修改请按照配置文件)
 - 账号：`superadmin` 密码：`123456`
-
-## 演示图 ✅
-![](backend/utils/picture/1.png) 
-![](backend/utils/picture/2.png) 
-![](backend/utils/picture/3.png) 
-![](backend/utils/picture/4.png) 
-![](backend/utils/picture/5.png) 
-![](backend/utils/picture/6.png) 
-![](backend/utils/picture/7.png) 
-![](backend/utils/picture/8.png) 
-![](backend/utils/picture/9.png) 
-![](backend/utils/picture/10.png)

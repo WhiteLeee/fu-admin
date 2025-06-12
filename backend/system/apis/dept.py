@@ -43,37 +43,96 @@ class SchemaOut(ModelSchema):
 
 @router.post("/dept", response=SchemaOut)
 def create_dept(request, data: SchemaIn):
-    dept = create(request, data, Dept)
-    return dept
+    """创建部门信息"""
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"创建部门，请求数据: {data.dict()}")
+    try:
+        dept = create(request, data, Dept)
+        logger.info(f"部门创建成功: {dept.id} - {dept.name}")
+        return dept
+    except Exception as e:
+        logger.error(f"创建部门失败: {e}")
+        return FuResponse(code=500, msg=f"创建部门失败: {e}")
 
 
 @router.delete("/dept/{dept_id}")
 def delete_dept(request, dept_id: int):
-    delete(dept_id, Dept)
-    return {"success": True}
+    """删除部门信息"""
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"删除部门，部门ID: {dept_id}")
+    try:
+        delete(dept_id, Dept)
+        logger.info(f"部门 {dept_id} 删除成功")
+        return {"success": True}
+    except Exception as e:
+        logger.error(f"删除部门 {dept_id} 失败: {e}")
+        return FuResponse(code=500, msg=f"删除部门失败: {e}")
 
 
 @router.put("/dept/{dept_id}", response=SchemaOut)
 def update_dept(request, dept_id: int, data: SchemaIn):
-    dept = update(request, dept_id, data, Dept)
-    return dept
+    """更新部门信息"""
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"更新部门 {dept_id}，请求数据: {data.dict()}")
+    try:
+        dept = update(request, dept_id, data, Dept)
+        logger.info(f"部门 {dept_id} 更新成功")
+        return dept
+    except Exception as e:
+        logger.error(f"更新部门 {dept_id} 失败: {e}")
+        return FuResponse(code=500, msg=f"更新部门失败: {e}")
 
 
 @router.get("/dept", response=List[SchemaOut])
 @paginate(MyPagination)
 def list_dept(request, filters: Filters = Query(...)):
-    qs = retrieve(request, Dept, filters)
-    return qs
+    """获取部门列表(分页)
+    支持通过部门名称、状态进行过滤
+    """
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"获取部门列表，过滤条件: {filters.dict()}")
+    try:
+        qs = retrieve(request, Dept, filters)
+        logger.info(f"查询到 {len(qs)} 条部门记录")
+        return qs
+    except Exception as e:
+        logger.error(f"获取部门列表失败: {e}")
+        return FuResponse(code=500, msg=f"获取部门列表失败: {e}")
 
 
 @router.get("/dept/{dept_id}", response=SchemaOut)
 def get_dept(request, dept_id: int):
-    dept = get_object_or_404(Dept, id=dept_id)
-    return dept
+    """获取单个部门信息"""
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"获取部门信息，部门ID: {dept_id}")
+    try:
+        dept = get_object_or_404(Dept, id=dept_id)
+        logger.info(f"查询到部门: {dept.name}")
+        return dept
+    except Exception as e:
+        logger.error(f"获取部门 {dept_id} 信息失败: {e}")
+        return FuResponse(code=404, msg=f"部门不存在: {e}")
 
 
 @router.get("/dept/list/tree")
 def list_dept_tree(request, filters: Filters = Query(...)):
-    qs = retrieve(request, Dept, filters).values()
-    dept_tree = list_to_tree(list(qs))
-    return FuResponse(data=dept_tree)
+    """获取部门树形列表
+    支持通过部门名称、状态进行过滤
+    """
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"获取部门树形列表，过滤条件: {filters.dict()}")
+    try:
+        qs = retrieve(request, Dept, filters).values()
+        logger.info(f"查询到 {len(qs)} 条部门记录(用于构建树)")
+        dept_tree = list_to_tree(list(qs))
+        logger.info(f"生成部门树，包含 {len(dept_tree)} 个顶级部门")
+        return FuResponse(data=dept_tree)
+    except Exception as e:
+        logger.error(f"获取部门树形列表失败: {e}")
+        return FuResponse(code=500, msg=f"获取部门树形列表失败: {e}")
